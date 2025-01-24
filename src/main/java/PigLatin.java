@@ -51,14 +51,14 @@ public String pigLatin(String sWord)
   if (findFirstVowel(sWord) == 0){
     return sWord + "way";
   }
-  if(sWord.substring(0,2).equals("qu")){
+  if(sWord.substring(0,2).toLowerCase().equals("qu")){
     return sWord.substring(2) + "quey";
   }
   if( findFirstVowel(sWord) > 0 ){
     return sWord.substring( findFirstVowel(sWord) ) + sWord.substring(0, findFirstVowel(sWord)) + "ay";
   }
-  
+  else {
     return "ERROR!";
-  
+  }
 }
 }//end PigLatin class

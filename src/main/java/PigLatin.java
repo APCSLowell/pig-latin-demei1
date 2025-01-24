@@ -54,7 +54,7 @@ public String pigLatin(String sWord)
   if(sWord.substring(0,2).equals("qu")){
     return sWord.substring(2) + "quey";
   }
-  if( findFirstVowel(sWord) >= 0 ){
+  if( findFirstVowel(sWord) > 0 ){
     return sWord.substring( findFirstVowel(sWord) ) + sWord.substring(0, findFirstVowel(sWord)) + "ay";
   }
   

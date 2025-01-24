@@ -31,6 +31,7 @@ public class PigLatin {
 //precondition: sWord is a valid String of length greater than 0.
 //postcondition: returns the position of the first vowel in sWord.  If there are no vowels, returns -1
 {
+  word = word.toLowerCase();
   for (int i = 0 ; i < word.length(); i++){
     if (word.substring(i,i+1).equals("a") ||  word.substring(i,i+1).equals("e") || 
     word.substring(i,i+1).equals("i") || word.substring(i,i+1).equals("o") || word.substring(i,i+1).equals("u")){

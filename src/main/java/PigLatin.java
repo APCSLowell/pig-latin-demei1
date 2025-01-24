@@ -53,7 +53,7 @@ public String pigLatin(String sWord)
     return sWord + "way";
   }
   if(sWord.substring(0,2).toLowerCase().equals("qu")){
-    return sWord.substring(2) + "quey";
+    return sWord.substring(2) + "quay";
   }
   if( findFirstVowel(sWord) > 0 ){
     return sWord.substring( findFirstVowel(sWord) ) + sWord.substring(0, findFirstVowel(sWord)) + "ay";
